@@ -54,7 +54,7 @@ function drawSector(sector, i) {
   ctx.textAlign = "center";
   ctx.fillStyle = sector.text;
   ctx.font = "bold 30px 'Lato', sans-serif";
-  ctx.fillText(sector.label, rad - 40, 40);
+  ctx.fillText(sector.label, rad/2, 10);
   //
 
   ctx.restore();
