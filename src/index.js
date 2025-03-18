@@ -64,7 +64,7 @@ function drawSector(sector, i) {
   ctx.fillText(sector.label, rad/2, 10);
   ctx.beginPath();
   ctx.globalCompositeOperation="source-in";
-  ctx.drawImage(img,0,0);
+  ctx.drawImage(img,rad/2,0);
   //
 
   ctx.restore();
