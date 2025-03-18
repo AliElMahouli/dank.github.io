@@ -3,6 +3,13 @@ const sectors = [
   { color: "#FF5A10", text: "#333333", label: "Bun" },
 ];
 
+var img=document.createElement("img");
+img.onload=function(){
+       draw();
+}
+img.src="http://images4.fanpop.com/image/photos/23400000/water-water-23444632-2048-1277.jpg";
+
+
 const events = {
   listeners: {},
   addListener: function (eventName, fn) {
@@ -55,6 +62,9 @@ function drawSector(sector, i) {
   ctx.fillStyle = sector.text;
   ctx.font = "bold 30px 'Lato', sans-serif";
   ctx.fillText(sector.label, rad/2, 10);
+  ctx.beginPath();
+  ctx.globalCompositeOperation="source-in";
+  ctx.drawImage(img,0,0);
   //
 
   ctx.restore();
