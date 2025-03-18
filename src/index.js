@@ -51,7 +51,7 @@ function drawSector(sector, i) {
   // TEXT
   ctx.translate(rad, rad);
   ctx.rotate(ang + arc / 2);
-  ctx.textAlign = "right";
+  ctx.textAlign = "center";
   ctx.fillStyle = sector.text;
   ctx.font = "bold 30px 'Lato', sans-serif";
   ctx.fillText(sector.label, rad - 10, 10);
