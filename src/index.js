@@ -59,8 +59,6 @@ function drawSector(sector, i) {
   ctx.fillStyle = sector.text;
   ctx.font = "bold 30px 'Lato', sans-serif";
   ctx.fillText(sector.label, rad/2, 10);
-  ctx.beginPath();
-  ctx.drawImage(image,rad/2,0,rad/7,rad/7);
   //
 
   ctx.restore();
